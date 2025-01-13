@@ -10,7 +10,7 @@ const NavHead = () => {
           href={"tel:+8801912124102"}
           className="ml-2 text-lg font-mono tracking-normal flex justify-center items-center gap-2"
         >
-          <i className="fa-brands fa-whatsapp text-xl"></i>{" "}
+          <i className="fa-solid fa-phone text-xl"></i>{" "}
           <span>+880 1912-124102</span>
         </Link>
       </div>
@@ -29,5 +29,4 @@ const NavHead = () => {
     </div>
   );
 };
-
 export default NavHead;
