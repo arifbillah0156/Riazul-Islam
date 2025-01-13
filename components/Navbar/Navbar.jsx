@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import architect from "@/public/Images/architect.gif";
 import Image from "next/image";
+import NavHead from "./NavHead";
 
 const NavbarWithDropdown = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,6 +12,7 @@ const NavbarWithDropdown = () => {
 
   return (
     <div>
+      <NavHead />
       {/* Nav Links */}
       <nav className="text-[#00a24f] py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,7 +35,7 @@ const NavbarWithDropdown = () => {
               </Link>
             </div>
             {/* Desktop Menu */}
-            <div className="hidden md:flex  font-bold tracking-wide">
+            <div className="hidden md:flex  font-bold tracking-wider">
               <Link href="/">
                 <span className="linkDropdownMainText">Home</span>
               </Link>
@@ -143,7 +145,7 @@ const NavbarWithDropdown = () => {
         </div>
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden font-bold tracking-wide">
+          <div className="md:hidden font-bold tracking-wider">
             <div className="space-y-2 py-4 px-6 mobileNavMenubar">
               <Link href="/">
                 <span className="block px-4 py-2 text-sm linkDropdownText">
