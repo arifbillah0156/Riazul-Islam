@@ -1,9 +1,13 @@
 "use client";
-import Link from "next/link";
 import { useState } from "react";
-import architect from "@/public/Images/architect.gif";
-import Image from "next/image";
 import NavHead from "./NavHead";
+import NavLogo from "./NavLogo";
+import NavDropdownDesktop from "./NavDropdownDesktop";
+import NavDropdownDesktop2 from "./NavDropdownDesktop2";
+import NavDropdownMobile from "./NavDropdownMobile";
+import NavDropdownMobile2 from "./NavDropdownMobile2";
+import NavLinksDesktop from "./NavLinksDesktop";
+import NavLinksMobile from "./NavLinksMobile";
 
 const NavbarWithDropdown = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,34 +18,16 @@ const NavbarWithDropdown = () => {
     <div>
       <NavHead />
       {/* Nav Links */}
-      <nav className="text-[#00a24f] py-4">
+      <nav className="text-[#00a24f] py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex items-center gap-3">
-              <Link href="/" className="text-2xl">
-                <Image
-                  src={architect}
-                  width={60}
-                  alt="Architect"
-                  className="rounded-full"
-                  priority
-                />
-              </Link>
-              <Link href="/">
-                <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animate-pulse">
-                  Riazul Islam
-                </span>
-              </Link>
-            </div>
+            <NavLogo />
             {/* Desktop Menu */}
             <div className="hidden md:flex  font-bold tracking-wider">
-              <Link href="/">
-                <span className="linkDropdownMainText">Home</span>
-              </Link>
-              <Link href="/about">
-                <span className="linkDropdownMainText">About</span>
-              </Link>
+              <NavLinksDesktop href="/" text="Home" />
+              <NavLinksDesktop href="/about" text="About" />
+
               {/* Dropdown Menu */}
               <div
                 className="relative"
@@ -54,25 +40,13 @@ const NavbarWithDropdown = () => {
                 </button>
                 {isDropdownOpen && (
                   <div className="absolute bg-[#00a24f] text-white ring-2 rounded-[6px] shadow-lg">
-                    <Link href="/projects/residential">
-                      <span className="block px-4 py-2 linkDropdownText">
-                        Residential
-                      </span>
-                    </Link>
-                    <Link href="/projects/commercial">
-                      <span className="block px-4 py-2 linkDropdownText">
-                        Commercial
-                      </span>
-                    </Link>
-                    <Link href="/projects/interior">
-                      <span className="block px-4 py-2 linkDropdownText">
-                        Interior
-                      </span>
-                    </Link>
+                    <NavDropdownDesktop href="/" text="Residential" />
+                    <NavDropdownDesktop href="/" text="Commercial" />
+                    <NavDropdownDesktop href="/" text="Interior" />
                   </div>
                 )}
               </div>
-              {/* Dropdown Menu 2*/}
+              {/* Dropdown Menu Gallery*/}
               <div
                 className="relative"
                 onMouseEnter={() => setIsDropdownOpen2(true)}
@@ -84,35 +58,15 @@ const NavbarWithDropdown = () => {
                 </button>
                 {isDropdownOpen2 && (
                   <div className="absolute bg-[#00a24f] text-white ring-2 rounded-[6px] shadow-lg w-max">
-                    <Link href="/projects/residential">
-                      <span className="block px-4 py-2 linkDropdownText">
-                        Duplex Home
-                      </span>
-                    </Link>
-                    <Link href="/projects/commercial">
-                      <span className="block px-4 py-2 linkDropdownText">
-                        Interior Design
-                      </span>
-                    </Link>
-                    <Link href="/projects/interior">
-                      <span className="block px-4 py-2 linkDropdownText">
-                        Park/Resort Design
-                      </span>
-                    </Link>
-                    <Link href="/projects/interior">
-                      <span className="block px-4 py-2 linkDropdownText">
-                        4 Storied Building
-                      </span>
-                    </Link>
+                    <NavDropdownDesktop2 href="/" text="Duplex Home" />
+                    <NavDropdownDesktop2 href="/" text="Interior Design" />
+                    <NavDropdownDesktop2 href="/" text="Park/Resort Design" />
+                    <NavDropdownDesktop2 href="/" text="4 Storied Building" />
                   </div>
                 )}
               </div>
-              <Link href="/services">
-                <span className="linkDropdownMainText">Services</span>
-              </Link>
-              <Link href="/contact">
-                <span className="linkDropdownMainText">Contact</span>
-              </Link>
+              <NavLinksDesktop href="/services" text="Services" />
+              <NavLinksDesktop href="/contact" text="Contact" />
             </div>
             {/* Mobile Menu Button */}
             <div className="md:hidden">
@@ -147,16 +101,9 @@ const NavbarWithDropdown = () => {
         {isMenuOpen && (
           <div className="md:hidden font-bold tracking-wider">
             <div className="space-y-2 py-4 px-6 mobileNavMenubar">
-              <Link href="/">
-                <span className="block px-4 py-2 text-sm linkDropdownText">
-                  Home
-                </span>
-              </Link>
-              <Link href="/about">
-                <span className="block px-4 py-2 text-sm linkDropdownText">
-                  About
-                </span>
-              </Link>
+              <NavLinksMobile href="/" text="Home" />
+              <NavLinksMobile href="/about" text="About" />
+
               {/* Mobile Dropdown Menu */}
               <div>
                 <button
@@ -167,25 +114,13 @@ const NavbarWithDropdown = () => {
                 </button>
                 {isDropdownOpen && (
                   <div className="pl-4">
-                    <Link href="/projects/residential">
-                      <span className="block px-4 py-2 text-sm linkDropdownText_M">
-                        Residential
-                      </span>
-                    </Link>
-                    <Link href="/projects/commercial">
-                      <span className="block px-4 py-2 text-sm linkDropdownText_M">
-                        Commercial
-                      </span>
-                    </Link>
-                    <Link href="/projects/interior">
-                      <span className="block px-4 py-2 text-sm linkDropdownText_M">
-                        Interior
-                      </span>
-                    </Link>
+                    <NavDropdownMobile href="/" text="Residential" />
+                    <NavDropdownMobile href="/" text="Commercial" />
+                    <NavDropdownMobile href="/" text="Interior" />
                   </div>
                 )}
               </div>
-              {/* Mobile Dropdown Menu */}
+              {/* Mobile Dropdown Menu Gallery */}
               <div>
                 <button
                   onClick={() => setIsDropdownOpen2(!isDropdownOpen2)}
@@ -195,44 +130,19 @@ const NavbarWithDropdown = () => {
                 </button>
                 {isDropdownOpen2 && (
                   <div className="pl-4">
-                    <Link href="/projects/residential">
-                      <span className="block px-4 py-2 text-sm linkDropdownText_M">
-                        Duplex Home
-                      </span>
-                    </Link>
-                    <Link href="/projects/commercial">
-                      <span className="block px-4 py-2 text-sm linkDropdownText_M">
-                        Interior Design
-                      </span>
-                    </Link>
-                    <Link href="/projects/interior">
-                      <span className="block px-4 py-2 text-sm linkDropdownText_M">
-                        Park/Resort Design
-                      </span>
-                    </Link>
-                    <Link href="/projects/interior">
-                      <span className="block px-4 py-2 text-sm linkDropdownText_M">
-                        4 Storied Building
-                      </span>
-                    </Link>
+                    <NavDropdownMobile2 href="/" text="Duplex Home" />
+                    <NavDropdownMobile2 href="/" text="Interior Design" />
+                    <NavDropdownMobile2 href="/" text="Park/Resort Design" />
+                    <NavDropdownMobile2 href="/" text="4 Storied Building" />
                   </div>
                 )}
               </div>
-              <Link href="/services">
-                <span className="block px-4 py-2 text-sm linkDropdownText">
-                  Services
-                </span>
-              </Link>
-              <Link href="/contact">
-                <span className="block px-4 py-2 text-sm linkDropdownText">
-                  Contact
-                </span>
-              </Link>
+              <NavLinksMobile href="/services" text="Services" />
+              <NavLinksMobile href="/contact" text="Contact" />
             </div>
           </div>
         )}
-      </nav>{" "}
-      <hr />
+      </nav>
     </div>
   );
 };

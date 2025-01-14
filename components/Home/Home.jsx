@@ -62,7 +62,7 @@ export default function HomePage() {
               passHref
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 text-[20px] font-mono tracking-normal flex justify-center items-center gap-3 bg-green-700 w-max px-5 py-4 rounded-3xl font-bold"
+              className="ml-2 text-[20px] font-mono tracking-normal flex justify-center items-center gap-3 bg-green-700 w-max px-5 py-4 rounded-3xl hover:rounded-xl duration-75 hover:ring font-bold"
             >
               <i className="fa-brands fa-facebook text-2xl"></i>{" "}
               <span>Contact Me</span>
