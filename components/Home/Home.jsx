@@ -1,9 +1,12 @@
 "use client";
 
 import React from "react";
-import { Typewriter } from "react-simple-typewriter";
+import architect from "@/public/Images/architect.gif";
+
+// import { Typewriter } from "react-simple-typewriter";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HomePage() {
   const images = [
@@ -34,7 +37,7 @@ export default function HomePage() {
       <div className="h-full w-full flex items-center justify-center bg-black bg-opacity-50 text-white">
         <div className="text-center mt-[-30vh]">
           {/* auto type */}
-          <div style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
+          {/* <div style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
             <h1>Hello Dear,</h1>
             <div className="text-yellow-500 text-2xl md:text-4xl">
               <Typewriter
@@ -47,25 +50,28 @@ export default function HomePage() {
                 delaySpeed={1000}
               />
             </div>
-          </div>
+          </div> */}
           {/*  */}
-          <h1 className="mt-8 text-2xl md:text-4xl font-bold">
-            Welcome to My Homepage
-          </h1>{" "}
+          <h1 className="mt-8 text-4xl md:text-6xl font-bold text-[#ffffff]">
+            Studio Architect
+          </h1>
           <br />
           <h3 className="text-xl md:text-4xl font-bold text-green-500 px-2 [text-shadow:_0_8px_8px_rgb(14_165_223_/_0.5)]">
             Best Building Design Architect In Bangladesh.
           </h3>
           <div className="mt-8 w-full flex justify-center">
             <Link
-              href={"https://www.facebook.com/riaz.hosain.58"}
-              passHref
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/contact"
               className="ml-2 text-[20px] font-mono tracking-normal flex justify-center items-center gap-3 bg-green-700 w-max px-5 py-4 rounded-3xl hover:rounded-xl duration-75 hover:ring font-bold"
             >
-              <i className="fa-brands fa-facebook text-2xl"></i>{" "}
-              <span>Contact Me</span>
+              <Image
+                src={architect}
+                width={50}
+                alt="Architect"
+                className="rounded-full"
+                priority
+              />
+              <span>Contact Us</span>
             </Link>
           </div>
         </div>

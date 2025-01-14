@@ -72,7 +72,7 @@ const NavbarWithDropdown = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-[#00a24f] border p-1 rounded-md mr-3"
+                className="text-[#00a24f] border p-1 rounded-md"
               >
                 <svg
                   className="h-7 w-7"

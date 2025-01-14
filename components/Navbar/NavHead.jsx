@@ -14,7 +14,7 @@ const NavHead = () => {
           <span>+880 1912-124102</span>
         </Link>
       </div>
-      <div className="">
+      {/* <div className="">
         <Link
           href={"https://www.facebook.com/riaz.hosain.58"}
           passHref
@@ -25,7 +25,7 @@ const NavHead = () => {
           <i className="fa-brands fa-facebook text-xl"></i>{" "}
           <span>Ar Riazul Islam</span>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
