@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const HomeSection3 = () => {
@@ -29,12 +30,12 @@ const HomeSection3 = () => {
         }}
       >
         <div className="h-full w-full p-4 py-20 mt-2">
-          <p className="text-[25px] md:text-[34px] text-start ">
+          <p className="text-[25px] md:text-[34px] text-start text-green-600">
             We are committed to give you
           </p>
           <h1 className="text-[40px] text-start ">
             New <span className="text-green-600">Building Design</span> In
-            Bangladesh
+            Bangladesh.
           </h1>
           <p className="mt-4 text-[16px] sm:text-[20px] text-green-700 text-start ">
             When it comes to innovative and new building design, Green Architect
@@ -54,7 +55,14 @@ const HomeSection3 = () => {
               <i className="fa-solid fa-arrow-right mr-2 text-pink-600"></i>
               Building plan approval in any city of Bangladesh.
             </p>
-          </div>
+          </div>{" "}
+          <br /> <br />
+          <Link
+            href="/services"
+            className="p-4 rounded-lg border border-green-500 text-green-700 text-xl font-mono hover:bg-green-600 hover:text-white hover:ring duration-100 tracking-normal"
+          >
+            Read More...
+          </Link>
         </div>
       </div>
     </div>
