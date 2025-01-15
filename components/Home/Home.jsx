@@ -7,20 +7,20 @@ import architect from "@/public/Images/architect.gif";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import a1 from "@/public/1.jpeg";
-import a2 from "@/public/2.jpeg";
-import a3 from "@/public/3.jpeg";
-import a4 from "@/public/4.jpeg";
-import a5 from "@/public/5.jpeg";
+// import a1 from "@/public/1.jpeg";
+// import a2 from "@/public/2.jpeg";
+// import a3 from "@/public/3.jpeg";
+// import a4 from "@/public/4.jpeg";
+// import a5 from "@/public/5.jpeg";
 
 export default function HomePage() {
   const images = [
     //
-    "/1.jpeg",
-    "/2.jpeg",
-    "/3.jpeg",
+    // "/1.jpeg",
+    // "/2.jpeg",
+    // "/3.jpeg",
     "/4.jpeg",
-    "/5.jpeg",
+    // "/5.jpeg",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
