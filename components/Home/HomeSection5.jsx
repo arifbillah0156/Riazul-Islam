@@ -37,15 +37,7 @@ export default function HomeSection5() {
               >
                 Contact us
               </Link>
-              today and let us help you design your dream building. <br />
-              Our building plans stand out due to their unique and creative
-              designs. We believe that a well-designed building plan can not
-              only enhance aesthetic appeal but also improve functionality.
-              Therefore, we offer customized house plan designs that allow our
-              clients to build custom homes and create their own dream homes.
-              Whether it’s a building plan design with a swimming pool or any
-              other feature, we work closely with our clients to ensure their
-              vision becomes a reality.
+              today and let us help you design your dream building.
             </p>
           </div>
           {/* Additional Content */}
