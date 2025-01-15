@@ -2,9 +2,10 @@ import Navbar from "@/components/Navbar/Navbar";
 import "./globals.css";
 
 export const metadata = {
-  title: "Architect - Riazul Islam",
-  description: "I am Architect Riazul Islam.",
-  icons: "/Images/Riaz-Logo.png",
+  title: "Studio Architect",
+  description:
+    "Studio Architect - Best Building Design Architect In Bangladesh.",
+  icons: "/Images/Studio Architect.jpeg",
 };
 
 export default function RootLayout({ children }) {

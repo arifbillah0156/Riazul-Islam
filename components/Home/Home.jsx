@@ -10,11 +10,11 @@ import Image from "next/image";
 
 export default function HomePage() {
   const images = [
-    "/1.jpeg", // Replace with your image paths
-    "/2.jpeg",
-    "/3.jpeg",
+    // "/1.jpeg",
+    // "/2.jpeg",
+    // "/3.jpeg",
     "/4.jpeg",
-    "/5.jpeg",
+    // "/5.jpeg",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -62,7 +62,7 @@ export default function HomePage() {
           <div className="mt-8 w-full flex justify-center">
             <Link
               href="/contact"
-              className="ml-2 text-[20px] font-mono tracking-normal flex justify-center items-center gap-3 bg-green-700 w-max px-5 py-4 rounded-3xl hover:rounded-xl duration-75 hover:ring font-bold"
+              className="ml-2 text-[22px] font-mono tracking-normal flex justify-center items-center gap-3 bg-green-700 w-max px-5 py-4 rounded-2xl hover:rounded-xl duration-75 hover:ring "
             >
               <Image
                 src={architect}

@@ -7,11 +7,11 @@ const NavHead = () => {
       <div>One click to your dream home.</div>
       <div className="">
         <Link
-          href={"tel:+8801912124102"}
+          href={"tel:+8801521254689"}
           className="ml-2 text-lg font-mono tracking-normal flex justify-center items-center gap-2"
         >
           <i className="fa-solid fa-phone text-xl"></i>{" "}
-          <span>+880 1912-124102</span>
+          <span>+88 01521-254689</span>
         </Link>
       </div>
       {/* <div className="">

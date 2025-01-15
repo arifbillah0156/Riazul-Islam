@@ -19,7 +19,7 @@ const NavbarWithDropdown = () => {
       <NavHead />
       {/* Nav Links */}
       <nav className="text-[#00a24f] py-2">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-1 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <NavLogo />
@@ -72,7 +72,7 @@ const NavbarWithDropdown = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-[#00a24f] border p-1 rounded-md"
+                className="text-[#00a24f] border p-1 mr-1 rounded-md"
               >
                 <svg
                   className="h-7 w-7"
