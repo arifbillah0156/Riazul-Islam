@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import img1 from "@/public/1.jpeg";
 import img2 from "@/public/2.jpeg";
 import img3 from "@/public/3.jpeg";
+import Link from "next/link";
 
 const HomeSection2 = () => {
   const [imgData, setImgData] = useState(null);
@@ -13,14 +14,17 @@ const HomeSection2 = () => {
       {
         imgUrl: img1,
         imgTxt: "Modern Duplex House",
+        fullImgUrl: "/1.jpeg",
       },
       {
         imgUrl: img2,
         imgTxt: "Residential High-rise Building",
+        fullImgUrl: "/2.jpeg",
       },
       {
         imgUrl: img3,
         imgTxt: "Residential 4-Story Building",
+        fullImgUrl: "/3.jpeg",
       },
     ];
     setImgData(totalImg);
@@ -42,15 +46,26 @@ const HomeSection2 = () => {
                 return (
                   <div
                     key={img.imgTxt}
-                    className="bg-gray-200 rounded-lg shadow p-2 text-center textGradient"
+                    className="bg-gray-200 rounded-lg shadow p-2 text-center textGradient relative "
                   >
                     <Image
                       src={img.imgUrl}
                       alt="Image"
                       placeholder="blur"
-                      className="h-[300px]"
+                      className="h-[300px] object-cover"
                     />
-                    <p className="text-2xl mt-3 mb-2">{img.imgTxt}</p>
+                    <div className="text-2xl mt-3 mb-2">{img.imgTxt}</div>
+                    <div className="absolute inset-0  text-white text-start text-3xl p-4">
+                      <Link
+                        href={img.fullImgUrl}
+                        passHref
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className=""
+                      >
+                        <i className="fa-solid fa-expand"></i>
+                      </Link>
+                    </div>
                   </div>
                 );
               })
