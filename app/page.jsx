@@ -6,6 +6,7 @@ import HomeSection5 from "@/components/Home/HomeSection5";
 import HomeSection6 from "@/components/Home/HomeSection6";
 import HomeSection7 from "@/components/Home/HomeSection7";
 import HomeSection8 from "@/components/Home/HomeSection8";
+import HomeSection9 from "@/components/Home/HomeSection9";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <HomeSection6 />
       <HomeSection7 />
       <HomeSection8 />
+      <HomeSection9 />
     </div>
   );
 }
