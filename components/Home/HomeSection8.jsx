@@ -12,6 +12,8 @@ const HomeSection8 = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Counter 1 */}
           <div className="bg-white px-4 py-8 shadow rounded-lg hover:scale-105 duration-100">
+            <i className="fa-solid fa-check-double text-4xl text-green-600"></i>{" "}
+            <br /> <br />
             <h3 className="text-2xl font-bold tracking-wide mb-3 textGradient">
               Project Completed
             </h3>
@@ -21,6 +23,8 @@ const HomeSection8 = () => {
           </div>
           {/* Counter 2 */}
           <div className="bg-white p-8 shadow rounded-lg hover:scale-105 duration-100">
+            <i className="fa-regular fa-face-smile text-4xl text-green-600"></i>{" "}
+            <br /> <br />
             <h3 className="text-2xl font-bold tracking-wide mb-3 textGradient">
               Satisfied Clients
             </h3>
@@ -30,6 +34,8 @@ const HomeSection8 = () => {
           </div>
           {/* Counter 3 */}
           <div className="bg-white p-8 shadow rounded-lg hover:scale-105 duration-100">
+            <i className="fa-solid fa-award text-4xl text-green-600"></i> <br />{" "}
+            <br />
             <h3 className="text-2xl font-bold tracking-wide mb-3 textGradient">
               Awards Won
             </h3>
