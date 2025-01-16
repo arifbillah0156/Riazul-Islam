@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function HomeSection5() {
   return (
     <div className="h-max w-[100%] relative mt-8">
@@ -7,7 +5,7 @@ export default function HomeSection5() {
       <div
         className="absolute inset-0 bg-cover bg-center opacity-50"
         style={{
-          backgroundImage: `url(/Images/HomeS5Bg.jpeg)`,
+          backgroundImage: `url(/Images/HomeS5Bg.jpg)`,
         }}
       ></div>
 
@@ -15,38 +13,20 @@ export default function HomeSection5() {
       <section className="relative">
         {/* Background Overlay */}
         <div className="absolute inset-0 bg-black opacity-0"></div>
-        <div className="container mx-auto px-6 py-16 relative z-10">
+        <div className="container mx-auto px-6 py-12 relative z-10">
           <div className="text-center">
             {/* Heading */}
-            <h2 className="text-4xl md:text-5xl font-bold text-purple-600 mb-4">
+            <h2 className="text-2xl sm:text-5xl font-bold text-purple-600 mb-4 [text-shadow:_3px_3px_3px_rgb(255_255_255_/_100%)]">
               Best Building Design{" "}
               <span className="text-green-500">Company In Bangladesh</span>
             </h2>
             {/* Divider */}
             <div className="w-full h-1 bg-green-500 mx-auto my-6"></div>
-            {/* Description */}
-            <p className="text-purple-600 text-lg leading-relaxed mb-6">
-              “Studio Architect is the leading building design company in
-              Bangladesh, offering innovative and sustainable solutions for
-              residential and commercial projects. Whether you need a modern
-              villa, a green office, or a smart city, we have the expertise and
-              experience to make your vision a reality.” <br />
-              <Link
-                href="/contact"
-                className="text-pink-600 underline px-1 font-bold"
-              >
-                Contact us
-              </Link>
-              today and let us help you design your dream building.
-            </p>
           </div>
           {/* Additional Content */}
           <div className="mt-12 space-y-8">
             <div className="bg-white p-6 shadow-md rounded-lg">
-              <h3 className="text-2xl font-semibold text-green-600 mb-4">
-                Best Building Design Company In Bangladesh
-              </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-70">
                 At Studio Architect, we take pride in being the best building
                 design company in Bangladesh. We were the first to introduce the{" "}
                 <strong>Green Building Concept to Bangladesh</strong>. With
