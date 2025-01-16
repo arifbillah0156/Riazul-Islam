@@ -139,7 +139,7 @@ const Footer = () => {
               passHref
               target="_blank"
               rel="noopener noreferrer"
-              className="border-2 border-x-pink-600 border-y-white font-bold px-4 py-2 text-lg rounded-full underline underline-offset-4 text-white decoration-2 tracking-wider font-mono decoration-blue-600"
+              className="border-2 border-y-pink-600 border-x-white font-bold px-4 py-2 text-lg rounded-full underline underline-offset-4 text-white decoration-2 tracking-wider font-mono decoration-blue-600"
             >
               Arif Billah
             </Link>
