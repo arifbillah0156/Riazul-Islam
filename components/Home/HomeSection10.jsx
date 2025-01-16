@@ -11,15 +11,15 @@ const HomeSection10 = () => {
           </h2>
 
           {/* Strategy Session */}
-          <div className="flex space-x-4">
-            <div className="flex items-center justify-center w-32 h-16 bg-blue-500 text-white rounded-full">
+          <div className="flex space-x-3">
+            <div className="bg-gray-100 h-max p-3 rounded-full text-green-600">
               <i className="fas fa-phone-alt text-xl"></i>
             </div>
             <div>
               <h3 className="text-xl font-semibold text-gray-800">
                 Initiate a Strategy Session
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 We begin by understanding your vision, goals, and needs in
                 detail. This collaborative phase allows us to create a concept
                 that aligns with your expectations, setting a strong foundation
@@ -30,14 +30,14 @@ const HomeSection10 = () => {
 
           {/* Design & Planning */}
           <div className="flex space-x-4">
-            <div className="flex items-center justify-center w-32 h-16 bg-blue-500 text-white rounded-full">
+            <div className="bg-gray-100 h-max p-3 rounded-full text-green-600">
               <i className="fas fa-users text-xl"></i>
             </div>
             <div>
               <h3 className="text-xl font-semibold text-gray-800">
                 Design & Planning
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Our expert architects and planners refine the initial concept
                 into a comprehensive design. We focus on creating functional,
                 aesthetic, and sustainable spaces while ensuring all regulatory
@@ -48,14 +48,14 @@ const HomeSection10 = () => {
 
           {/* Execution & Delivery */}
           <div className="flex space-x-4">
-            <div className="flex items-center justify-center w-32 h-16 bg-blue-500 text-white rounded-full">
+            <div className="bg-gray-100 h-max p-3 rounded-full text-green-600">
               <i className="fas fa-long-arrow-alt-right text-xl"></i>
             </div>
             <div>
               <h3 className="text-xl font-semibold text-gray-800">
                 Execution & Project Delivery
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Once the design is finalized, we move into the execution phase,
                 managing every aspect of construction. Our team ensures the
                 project stays on track, delivering your dream building with
