@@ -2,7 +2,7 @@ import React from "react";
 
 const HomeSection7 = () => {
   return (
-    <section className="relative bg-gray-50 px-4 md:px-0">
+    <section className="relative bg-gray-50 px-4 pb-4 md:px-0">
       {/* Top Shape Divider */}
       <div className="absolute top-0 w-full">
         <svg
