@@ -55,7 +55,7 @@ export default function HomeSection4() {
           ))}
         </div>
         {/* Tab Content */}
-        <div className="md:w-2/3 p-1 md:p-4">
+        <div className="md:w-2/3 p-1 md:p-4 lg:h-[230px]">
           {tabs.map((tab) => (
             <div
               key={tab.id}

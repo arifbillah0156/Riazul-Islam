@@ -3,21 +3,8 @@ import React from "react";
 const HomeSection7 = () => {
   return (
     <section className="relative bg-gray-50 px-4 pb-4 md:px-0">
-      {/* Top Shape Divider */}
-      <div className="absolute top-0 w-full">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1000 100"
-          preserveAspectRatio="none"
-          className="w-full h-16"
-        >
-          <path
-            d="M0,6V0h1000v100L0,6z"
-            className="fill-current text-gray-100"
-          ></path>
-        </svg>
-      </div>
-
+      {" "}
+      <hr />
       <div className="container mx-auto py-16">
         <h2 className="text-center text-4xl font-bold mb-6">
           Why <span className="text-green-600">Choose Us</span>
@@ -92,21 +79,7 @@ const HomeSection7 = () => {
           </div>
         </div>
       </div>
-
-      {/* Bottom Shape Divider */}
-      <div className="absolute bottom-0 w-full">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1000 100"
-          preserveAspectRatio="none"
-          className="w-full h-16"
-        >
-          <path
-            d="M0,6V0h1000v100L0,6z"
-            className="fill-current text-gray-100"
-          ></path>
-        </svg>
-      </div>
+      <hr />
     </section>
   );
 };

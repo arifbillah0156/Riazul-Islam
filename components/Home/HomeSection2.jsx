@@ -34,9 +34,10 @@ const HomeSection2 = () => {
     <div>
       <div>
         <div className="mt-8 md:mt-16 mb-2 text-center">
-          <h1 className="text-3xl md:text-5xl  text-green-600 font-bold tracking-wider">
+          <h1 className="text-3xl md:text-5xl  text-green-600 font-bold tracking-wider px-4">
             A Full Service Experience
           </h1>
+          <i className="fa-solid fa-arrows-down-to-line mt-3 p-4 bg-green-200 rounded-full text-4xl text-green-600"></i>
         </div>
         {/*  */}
 

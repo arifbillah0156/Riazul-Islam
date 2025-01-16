@@ -3,7 +3,7 @@ import React from "react";
 
 const HomeSection8 = () => {
   return (
-    <section className="bg-gray-50 py-12">
+    <section className="bg-gray-50 py-12 w-full">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold mb-6 text-gray-800">
           In Our <span className="text-green-600">20 Years Of Journey,</span> We
