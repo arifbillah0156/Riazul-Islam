@@ -34,13 +34,13 @@ const HomeSection2 = () => {
     <div>
       <div>
         <div className="mt-8 md:mt-16 mb-2 text-center">
-          <h1 className="text-3xl md:text-5xl  textGradient font-bold tracking-wide ">
+          <h1 className="text-3xl md:text-5xl  text-green-600 font-bold tracking-wider">
             A Full Service Experience
           </h1>
         </div>
         {/*  */}
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-4 font-bold">
           {imgData
             ? imgData.map((img) => {
                 return (

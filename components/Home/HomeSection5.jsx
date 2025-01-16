@@ -1,6 +1,6 @@
 export default function HomeSection5() {
   return (
-    <div className="h-max w-[100%] relative mt-8">
+    <div className="h-max w-[100%] relative mt-12">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-50"
