@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar/Navbar";
 import "./globals.css";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata = {
   title: "Studio Architect",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       <body className="bg-white text-gray-900 merriweather-regular">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
